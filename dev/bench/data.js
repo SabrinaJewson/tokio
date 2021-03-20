@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1616263098757,
+  "lastUpdate": 1616263100804,
   "repoUrl": "https://github.com/KaiJewson/tokio",
   "entries": {
     "sync_rwlock": [
@@ -8467,6 +8467,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20647912,
             "range": "± 2566792",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kai.jewson@gmail.com",
+            "name": "KaiJewson",
+            "username": "KaiJewson"
+          },
+          "committer": {
+            "email": "kai.jewson@gmail.com",
+            "name": "KaiJewson",
+            "username": "KaiJewson"
+          },
+          "distinct": true,
+          "id": "57625dbfa83446b836a2e61ce541866b09ac9817",
+          "message": "sync: fix compilation of RwLock guards",
+          "timestamp": "2021-03-20T17:56:09Z",
+          "tree_id": "79c88f59a40b45df78807dee0f2eb32810cd7669",
+          "url": "https://github.com/KaiJewson/tokio/commit/57625dbfa83446b836a2e61ce541866b09ac9817"
+        },
+        "date": 1616263099560,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 193533,
+            "range": "± 9426",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 690103,
+            "range": "± 45589",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5068869,
+            "range": "± 475259",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20963266,
+            "range": "± 2455747",
             "unit": "ns/iter"
           }
         ]
