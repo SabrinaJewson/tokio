@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1616263100804,
+  "lastUpdate": 1616263104324,
   "repoUrl": "https://github.com/KaiJewson/tokio",
   "entries": {
     "sync_rwlock": [
@@ -12999,6 +12999,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 909,
             "range": "± 6",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kai.jewson@gmail.com",
+            "name": "KaiJewson",
+            "username": "KaiJewson"
+          },
+          "committer": {
+            "email": "kai.jewson@gmail.com",
+            "name": "KaiJewson",
+            "username": "KaiJewson"
+          },
+          "distinct": true,
+          "id": "57625dbfa83446b836a2e61ce541866b09ac9817",
+          "message": "sync: fix compilation of RwLock guards",
+          "timestamp": "2021-03-20T17:56:09Z",
+          "tree_id": "79c88f59a40b45df78807dee0f2eb32810cd7669",
+          "url": "https://github.com/KaiJewson/tokio/commit/57625dbfa83446b836a2e61ce541866b09ac9817"
+        },
+        "date": 1616263102893,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 15886,
+            "range": "± 8688",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 931,
+            "range": "± 258",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 603,
+            "range": "± 107",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 15247,
+            "range": "± 8468",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 899,
+            "range": "± 214",
             "unit": "ns/iter"
           }
         ]
